@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1500.0">
+         <top>
+            <AnchorPane prefHeight="24.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+         </top>
+         <right>
+            <AnchorPane prefHeight="376.0" prefWidth="30.0" BorderPane.alignment="CENTER" />
+         </right>
+         <left>
+            <AnchorPane prefHeight="976.0" prefWidth="262.0" BorderPane.alignment="CENTER_LEFT">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <children>
+                  <VBox alignment="CENTER_LEFT" maxWidth="1000.0" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="376.0" prefWidth="160.0">
+                     <children>
+                        <VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="2000.0" prefWidth="160.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ScrollPane fitToHeight="true" fitToWidth="true" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="992.0" prefWidth="262.0" vbarPolicy="ALWAYS" VBox.vgrow="ALWAYS">
+                                 <content>
+                                    <VBox>
+                                       <children>
+                                          <TitledPane animated="false" collapsible="false" text="owned items">
+                                             <font>
+                                                <Font name="Lucida Sans Typewriter Bold" size="20.0" />
+                                             </font>
+                                          </TitledPane>
+                                          <BorderPane prefHeight="327.0" prefWidth="148.0">
+                                             <right>
+                                                <TextArea fx:id="ownedText" editable="false" minHeight="-Infinity" prefHeight="930.0" prefWidth="238.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Lucida Sans Typewriter Regular" size="19.0" />
+                                                   </font>
+                                                </TextArea>
+                                             </right>
+                                          </BorderPane>
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <VBox depthTest="ENABLE" prefHeight="173.0" prefWidth="410.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane fitToWidth="true" hbarPolicy="ALWAYS" nodeOrientation="LEFT_TO_RIGHT" prefHeight="500.0" prefWidth="410.0" vbarPolicy="NEVER">
+                     <content>
+                        <HBox maxWidth="1.7976931348623157E308" prefHeight="375.0" prefWidth="500.0">
+                           <children>
+                              <BorderPane prefHeight="375.0" prefWidth="0.0">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </BorderPane>
+                              <VBox maxWidth="200.0" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <TitledPane fx:id="item_1_text" animated="false" collapsible="false" expanded="false" prefHeight="0.0" prefWidth="100.0" text="item_1">
+                                       <font>
+                                          <Font name="Lucida Sans Regular" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TextField fx:id="item_1_price" editable="false" prefHeight="19.0" prefWidth="100.0" />
+                                    <ImageView fitHeight="255.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button maxHeight="166.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="100.0" text="+" textAlignment="CENTER" textFill="#222121">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <effect>
+                                          <Reflection />
+                                       </effect>
+                                       <font>
+                                          <Font name="Symbol" size="26.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox maxWidth="200.0" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <TitledPane fx:id="item_2_text" animated="false" collapsible="false" expanded="false" prefHeight="0.0" prefWidth="100.0" text="item_2">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                       <font>
+                                          <Font name="Lucida Sans Regular" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TextField fx:id="item_2_price" editable="false" />
+                                    <ImageView fitHeight="255.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button maxHeight="251.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="100.0" text="+" textAlignment="CENTER" textFill="#222121">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <effect>
+                                          <Reflection />
+                                       </effect>
+                                       <font>
+                                          <Font name="Symbol" size="26.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox maxWidth="200.0" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <TitledPane fx:id="item_3_text" animated="false" collapsible="false" expanded="false" prefHeight="0.0" prefWidth="100.0" text="item_3">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                       <font>
+                                          <Font name="Lucida Sans Regular" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TextField fx:id="item_3_price" editable="false" />
+                                    <ImageView fitHeight="255.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button maxHeight="204.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="100.0" text="+" textAlignment="CENTER" textFill="#222121">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <effect>
+                                          <Reflection />
+                                       </effect>
+                                       <font>
+                                          <Font name="Symbol" size="26.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox maxWidth="200.0" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <TitledPane fx:id="item_4_text" animated="false" collapsible="false" expanded="false" prefHeight="0.0" prefWidth="100.0" text="item4">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                       <font>
+                                          <Font name="Lucida Sans Regular" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TextField fx:id="item_4_price" editable="false" />
+                                    <ImageView fitHeight="256.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button maxHeight="175.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="100.0" text="+" textAlignment="CENTER" textFill="#222121">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <effect>
+                                          <Reflection />
+                                       </effect>
+                                       <font>
+                                          <Font name="Symbol" size="26.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox maxWidth="200.0" minWidth="-Infinity" prefHeight="256.0" prefWidth="100.0">
+                                 <children>
+                                    <TitledPane fx:id="item_5_text" animated="false" collapsible="false" expanded="false" prefHeight="0.0" prefWidth="100.0" text="item_5">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                       <font>
+                                          <Font name="Lucida Sans Regular" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TextField fx:id="item_5_price" editable="false" prefHeight="0.0" prefWidth="100.0" />
+                                    <ImageView fitHeight="255.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button maxHeight="184.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="96.0" prefWidth="100.0" text="+" textAlignment="CENTER" textFill="#222121">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <effect>
+                                          <Reflection />
+                                       </effect>
+                                       <font>
+                                          <Font name="Symbol" size="26.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox maxWidth="200.0" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <TitledPane fx:id="item_6_text" animated="false" collapsible="false" expanded="false" prefHeight="0.0" prefWidth="100.0" text="item_1">
+                                       <font>
+                                          <Font name="Lucida Sans Regular" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TextField fx:id="item_6_price" editable="false" prefHeight="19.0" prefWidth="100.0" />
+                                    <ImageView fitHeight="255.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button maxHeight="112.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="107.0" prefWidth="100.0" text="+" textAlignment="CENTER" textFill="#222121">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <effect>
+                                          <Reflection />
+                                       </effect>
+                                       <font>
+                                          <Font name="Symbol" size="26.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox maxWidth="200.0" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <TitledPane fx:id="item_7_text" animated="false" collapsible="false" expanded="false" prefHeight="0.0" prefWidth="100.0" text="item_1">
+                                       <font>
+                                          <Font name="Lucida Sans Regular" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TextField fx:id="item_7_price" editable="false" prefHeight="19.0" prefWidth="100.0" />
+                                    <ImageView fitHeight="255.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button maxHeight="112.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="100.0" text="+" textAlignment="CENTER" textFill="#222121">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <effect>
+                                          <Reflection />
+                                       </effect>
+                                       <font>
+                                          <Font name="Symbol" size="26.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox maxWidth="200.0" minWidth="-Infinity" prefHeight="256.0" prefWidth="100.0">
+                                 <children>
+                                    <TitledPane fx:id="item_8_text" animated="false" collapsible="false" expanded="false" prefHeight="0.0" prefWidth="100.0" text="item_5">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                       <font>
+                                          <Font name="Lucida Sans Regular" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TextField fx:id="item_8_price" editable="false" prefHeight="0.0" prefWidth="100.0" />
+                                    <ImageView fitHeight="255.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button maxHeight="184.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="100.0" text="+" textAlignment="CENTER" textFill="#222121">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <effect>
+                                          <Reflection />
+                                       </effect>
+                                       <font>
+                                          <Font name="Symbol" size="26.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox maxWidth="200.0" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <TitledPane fx:id="item_9_text" animated="false" collapsible="false" expanded="false" prefHeight="0.0" prefWidth="100.0" text="item_1">
+                                       <font>
+                                          <Font name="Lucida Sans Regular" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TextField fx:id="item_9_price" editable="false" prefHeight="19.0" prefWidth="100.0" />
+                                    <ImageView fitHeight="255.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button maxHeight="112.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="100.0" text="+" textAlignment="CENTER" textFill="#222121">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <effect>
+                                          <Reflection />
+                                       </effect>
+                                       <font>
+                                          <Font name="Symbol" size="26.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox maxWidth="200.0" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <TitledPane fx:id="item_10_text" animated="false" collapsible="false" expanded="false" prefHeight="0.0" prefWidth="100.0" text="item_1">
+                                       <font>
+                                          <Font name="Lucida Sans Regular" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TextField fx:id="item_10_price" editable="false" prefHeight="19.0" prefWidth="100.0" />
+                                    <ImageView fitHeight="255.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button maxHeight="112.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="100.0" text="+" textAlignment="CENTER" textFill="#222121">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <effect>
+                                          <Reflection />
+                                       </effect>
+                                       <font>
+                                          <Font name="Symbol" size="26.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <BorderPane>
+                                 <center>
+                                    <TextField fx:id="emailText" editable="false" prefHeight="84.0" prefWidth="182.0" promptText="email" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Lucida Sans Regular" size="15.0" />
+                                       </font>
+                                    </TextField>
+                                 </center>
+                                 <top>
+                                    <ImageView fitHeight="150.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                       <image>
+                                          <Image url="@profile.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </top>
+                              </BorderPane>
+                           </children>
+                        </HBox>
+                     </content>
+                  </ScrollPane>
+                  <BorderPane prefHeight="228.0" prefWidth="410.0">
+                     <top>
+                        <TitledPane animated="false" collapsible="false" expanded="false" prefHeight="24.0" prefWidth="410.0" text="wish_list_items" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Lucida Sans Regular" size="18.0" />
+                           </font>
+                        </TitledPane>
+                     </top>
+                     <center>
+                        <HBox maxHeight="-Infinity" prefHeight="500.0" prefWidth="410.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="14.0" prefWidth="410.0" vbarPolicy="ALWAYS" HBox.hgrow="ALWAYS">
+                                 <content>
+                                    <AnchorPane>
+                                       <children>
+                                          <VBox maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="3000.0" AnchorPane.rightAnchor="0.0">
+                                             <children>
+                                                <HBox prefHeight="45.0" prefWidth="3000.0">
+                                                   <children>
+                                                      <Text fx:id="wish_1_text" accessibleRole="BUTTON" fill="#eb7272" fontSmoothingType="LCD" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Sans Serif;" textAlignment="CENTER" underline="true" wrappingWidth="82.98307228088379" HBox.hgrow="ALWAYS" />
+                                                      <ProgressBar fx:id="progress1" minWidth="-Infinity" prefHeight="38.0" prefWidth="869.0" progress="0.0" />
+                                                      <TextField fx:id="current_contribution1" editable="false" prefHeight="38.0" prefWidth="201.0" style="-fx-background-color: pink;" />
+                                                   </children>
+                                                </HBox>
+                                                <Separator prefWidth="200.0" />
+                                                <HBox prefHeight="44.0" prefWidth="3002.0">
+                                                   <children>
+                                                      <Text fx:id="wish_2_text" accessibleRole="BUTTON" fill="#eb7272" fontSmoothingType="LCD" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Sans Serif;" textAlignment="CENTER" underline="true" wrappingWidth="82.9765625" HBox.hgrow="ALWAYS" />
+                                                      <ProgressBar fx:id="progress2" minWidth="-Infinity" prefHeight="37.0" prefWidth="870.0" progress="0.0" />
+                                                      <TextField fx:id="current_contribution2" editable="false" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: pink;" />
+                                                   </children>
+                                                </HBox>
+                                                <Separator prefWidth="200.0" />
+                                                <HBox prefHeight="44.0" prefWidth="3002.0">
+                                                   <children>
+                                                      <Text fx:id="wish_3_text" accessibleRole="BUTTON" fill="#eb7272" fontSmoothingType="LCD" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Sans Serif;" textAlignment="CENTER" underline="true" wrappingWidth="84.98307228088379" HBox.hgrow="ALWAYS" />
+                                                      <ProgressBar fx:id="progress3" minWidth="-Infinity" prefHeight="37.0" prefWidth="868.0" progress="0.0" />
+                                                      <TextField fx:id="current_contribution3" editable="false" prefHeight="37.0" prefWidth="202.0" style="-fx-background-color: pink;" />
+                                                   </children>
+                                                </HBox>
+                                                <Separator prefWidth="200.0" />
+                                                <HBox prefHeight="45.0" prefWidth="3000.0">
+                                                   <children>
+                                                      <Text fx:id="wish_4_text" accessibleRole="BUTTON" fill="#eb7272" fontSmoothingType="LCD" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Sans Serif;" textAlignment="CENTER" underline="true" wrappingWidth="83.9765625" HBox.hgrow="ALWAYS" />
+                                                      <ProgressBar fx:id="progress4" minWidth="-Infinity" prefHeight="38.0" prefWidth="869.0" progress="0.0" />
+                                                      <TextField fx:id="current_contribution4" editable="false" prefHeight="38.0" prefWidth="202.0" style="-fx-background-color: pink;" />
+                                                   </children>
+                                                </HBox>
+                                                <Separator prefWidth="200.0" />
+                                                <HBox prefHeight="45.0" prefWidth="3000.0">
+                                                   <children>
+                                                      <Text fx:id="wish_5_text" accessibleRole="BUTTON" fill="#eb7272" fontSmoothingType="LCD" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Sans Serif;" textAlignment="CENTER" underline="true" wrappingWidth="82.98307228088379" HBox.hgrow="ALWAYS" />
+                                                      <ProgressBar fx:id="progress5" minWidth="-Infinity" prefHeight="38.0" prefWidth="870.0" progress="0.0" />
+                                                      <TextField fx:id="current_contribution5" editable="false" prefHeight="69.0" prefWidth="201.0" style="-fx-background-color: pink;" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </HBox>
+                     </center>
+                     <left>
+                        <AnchorPane prefHeight="335.0" prefWidth="35.0" BorderPane.alignment="CENTER" />
+                     </left>
+                  </BorderPane>
+                  <Button fx:id="removeBtn" alignment="CENTER" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="32.0" prefWidth="1192.0" text="Remove">
+                     <font>
+                        <Font name="Lucida Sans Regular" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

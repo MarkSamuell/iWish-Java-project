@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="prjj_final.jnlp">
+  <information>
+    <title>prjj_final</title>
+    <vendor>Salma Ahmed</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\fontawesomefx-8.2.jar" size="180341" download="eager" />
+    <jar href="lib\gson-2.9.0-javadoc.jar" size="668960" download="eager" />
+    <jar href="lib\gson-2.9.0-sources.jar" size="157115" download="eager" />
+    <jar href="lib\gson-2.9.0.jar" size="249277" download="eager" />
+    <jar href="lib\jackson-annotations-2.16.0.jar" size="78478" download="eager" />
+    <jar href="lib\jackson-core-2.16.0.jar" size="579130" download="eager" />
+    <jar href="lib\jackson-databind-2.16.0-javadoc.jar" size="6006556" download="eager" />
+    <jar href="lib\jackson-databind-2.16.0.jar" size="1636721" download="eager" />
+    <jar href="lib\mysql-connector-j-8.2.0.jar" size="2489850" download="eager" />
+    <jar href="prjj_final.jar" size="1277623" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="prjj_final" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="prjj.prjj"  name="prjj_final" />
+  <update check="always"/>
+</jnlp>
