@@ -1,0 +1,70 @@
+CREATE DATABASE I_Wish;
+USE I_Wish;
+
+CREATE TABLE items (
+    item_id INT PRIMARY KEY,
+    item_name VARCHAR(255),
+    item_price INT
+);
+
+CREATE TABLE Users (
+    user_email VARCHAR(255) PRIMARY KEY,
+    user_fname VARCHAR(255),
+    user_lname VARCHAR(255),
+    user_password VARCHAR(255),
+    user_credit INT
+);
+
+CREATE TABLE Friend_request (
+    user_email VARCHAR(255),
+    friend_request_email VARCHAR(255),
+    PRIMARY KEY (user_email, friend_request_email),
+    FOREIGN KEY (user_email) REFERENCES Users(user_email),
+    FOREIGN KEY (friend_request_email) REFERENCES Users(user_email)
+);
+
+CREATE TABLE Friends (
+    user_email VARCHAR(255),
+    friend_email VARCHAR(255),
+    PRIMARY KEY (user_email, friend_email),
+    FOREIGN KEY (user_email) REFERENCES Users(user_email),
+    FOREIGN KEY (friend_email) REFERENCES Users(user_email)
+);
+
+CREATE TABLE user_wish_list (
+    user_email VARCHAR(255),
+    item_id INT,
+    current_contribution INT,
+    PRIMARY KEY (user_email, item_id),
+    FOREIGN KEY (user_email) REFERENCES Users(user_email),
+    FOREIGN KEY (item_id) REFERENCES items(item_id)
+);
+
+CREATE TABLE user_owned_list (
+    user_email VARCHAR(255),
+    item_id INT,
+    PRIMARY KEY (user_email, item_id),
+    FOREIGN KEY (user_email) REFERENCES Users(user_email),
+    FOREIGN KEY (item_id) REFERENCES items(item_id)
+);
+
+CREATE TABLE notifications (
+    noti_id INT PRIMARY KEY,
+    user_email VARCHAR(255),
+    from_email VARCHAR(255),
+    noti VARCHAR(255),
+    notified TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_email) REFERENCES Users(user_email),
+    FOREIGN KEY (from_email) REFERENCES Users(user_email)
+);
+
+CREATE TABLE contributions (
+    from_user_email VARCHAR(255),
+    to_user_email VARCHAR(255),
+    item_id INT,
+    con_amount INT,
+    PRIMARY KEY (from_user_email, to_user_email, item_id),
+    FOREIGN KEY (from_user_email) REFERENCES Users(user_email),
+    FOREIGN KEY (to_user_email) REFERENCES Users(user_email),
+    FOREIGN KEY (item_id) REFERENCES items(item_id)
+);
